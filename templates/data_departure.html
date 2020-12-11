@@ -1,0 +1,7 @@
+<h1>Туры по направлению {departure}:</h1>
+{% for id, item in tours.items() %}
+    {% if departure == item["departure"] %}
+        <p>{{ item["country"] }}: <a href="/data/tours/1/">{{ item["title"] }} {{ item["price"] }} {{ item["stars"] }}*
+        </a></p>
+    {% endif %}
+{% endfor %}
