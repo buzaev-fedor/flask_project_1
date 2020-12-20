@@ -1,8 +1,0 @@
-{% for id, item in tours.items() %}
-    {% if id2 == id %}
-        <h1>{{ tours[id2]["nights"] }}: {{  tours[id]["title"] }} {{  tours[id]["price"] }}:</h1>
-        <p>{{ tours[id]["nights"] }} ночей</p>
-        <p>Стоимость: {{ tours[id]["price"] }} </p>
-        <p> {{ tours[id]["description"] }}</p>
-    {% endif %}
-{% endfor %}
