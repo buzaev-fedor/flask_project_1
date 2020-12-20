@@ -9,8 +9,8 @@
         и от {{ ((tours.values()|sort(attribute="nights"))|first).nights }} ночей до
         {{ ((tours.values()|sort(attribute="nights"))|last).nights }} ночей</p>
     <!-- CARDS -->
-    {% for id in tours.keys() %}
     <div class="row mt-5">
+        {% for id in tours.keys() %}
       <div class="col-4">
         <div class="card mb-4">
           <div class="embed-responsive embed-responsive-16by9">
