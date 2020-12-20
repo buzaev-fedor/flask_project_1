@@ -18,7 +18,7 @@
           </div>
           <div class="card-body">
             <h2 class="h5 card-title">{{ tours[id].title }}</h2>
-            <p class="card-text">{{ (tours[id].description)|truncate(100) }}</p>
+            <p class="card-text">{{ tours[id].description }}</p>
             <a href="/tours/{{ id }}/" class="btn btn-sm btn-primary">Подробнее</a>
           </div>
         </div>
