@@ -49,29 +49,5 @@ def render_server_error(error):
     return "Что-то не так, но мы все починим"
 
 
-# # Бонусная часть
-# @app.route("/data/")
-# def data():
-#     return flask.render_template("data.html",
-#                                  tours=tours
-#                                  )
-#
-#
-# @app.route("/data/departures/<departure>")
-# def get_departure(departure):
-#     return flask.render_template("data_departure.html",
-#                                  tours=tours,
-#                                  departure=departure
-#                                  )
-#
-#
-# @app.route("/data/departures/<id>/")
-# def get_id(id):
-#     return flask.render_template("data_id.html",
-#                                  tours=tours,
-#                                  id2=int(id)
-#                                  )
-
-
 if __name__ == '__main__':
     app.run(debug=True)
